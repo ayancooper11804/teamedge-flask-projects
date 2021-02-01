@@ -14,7 +14,7 @@ def about():
     return '<h1>About</h1><p>Some Other Content</p>'
 
 #Get all movies.
-@app.route('/api/v1/movies/all' methods=['GET'])
+@app.route('/api/v1/movies/all', methods=['GET'])
 def api_movies_all():
 
     #using with allows for opening and closing of file
