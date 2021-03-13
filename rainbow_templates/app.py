@@ -6,10 +6,10 @@ app = Flask(__name__)
 def index():
     return "Welcome to Ayan's Rainbow"
 
-@app.route('/rainbow')
-def rainbow():
-    colorlinks = ['red', 'orange', 'yellow']
-    return render_template("index.html", colorlinks=colorlinks)
+@app.route('/red')
+def red():
+    color = 'red'
+    return render_template('red.html, color = color')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
