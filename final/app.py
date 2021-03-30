@@ -14,7 +14,7 @@ def index():
 def success():
     name = request.form['name']
     messages = request.form['message']
-    sense.show_message(name + message)
+    sense.show_message(name  + " " + messages)
     return render_template('success.html' ,name = name ,message = messages)
 
 
