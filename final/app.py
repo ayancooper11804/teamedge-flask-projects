@@ -1,5 +1,5 @@
 from flask import Flask, render_template, current_app as app, redirect, url_for, request
-from sense_hat import SenseHat
+from sense_emu import SenseHat
 
 sense = SenseHat()
 
