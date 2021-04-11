@@ -26,14 +26,14 @@ def success():
 @app.route('/all')
 def all():
     conn = sqlite3.connect('./static/data/senseDisplay.db')
-    curs = conn.curso()
+    curs = conn.cursor()
     messages = []
     rows = curs.execute("SELECT * from messages")
     for row in rows:
         message = {'name': row[0], 'message': row[1]}
         messages.append(message)
     conn.close()
-    return render_template('all.html', message = messages)
+    return render_template('all.html', messages = messages)
 
 
 
