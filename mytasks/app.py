@@ -10,3 +10,7 @@ app = Flask(__name__)
 scheduler = APScheduler()
 scheduler.init_app(app)
 scheduler.start()
+
+@app.route('/')
+def index():
+    return render_template('index.html')
