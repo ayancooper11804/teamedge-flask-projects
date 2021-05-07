@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from sense_emu import SenseHat
+from sense_hat import SenseHat
 from flask_apscheduler import APScheduler
 import sqlite3
 
