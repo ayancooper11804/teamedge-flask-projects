@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
 </head>
 <body>
     <div id="set_tasks">
@@ -13,7 +14,7 @@
             <input type="text" name="task"/><br>
             <label for="reminder"> Set a reminder:</label><br>
             <input type="datetime-local" name="dateTime"/><br>
-            <input type="submit"/>
+            <input type="submit" value="Save"/>
         </form>
     </div>
 </body>
