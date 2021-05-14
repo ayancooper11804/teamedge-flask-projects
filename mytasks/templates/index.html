@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
 </head>
 <body>
+    <!-- Form to create a task -->
     <div id="set_tasks">
         <h1>Hello, Ayan!</h1>
         <form action="/" method="post">
             <label for="task"> Set your task:</label><br>
             <input type="text" name="task"/><br>
             <label for="reminder"> Set a reminder:</label><br>
-            <input type="datetime-local" name="dateTime"/><br>
-            <input type="submit" value="Save"/>
+            <input type="datetime-local" name="date"/><br>
+            <input type="submit" value="Create"/>
         </form>
     </div>
+
+   
+
 </body>
 </html>
