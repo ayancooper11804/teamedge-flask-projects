@@ -1,0 +1,15 @@
+body {
+    background-color: gray;
+}
+
+#set_tasks {
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: blue;
+}
+
+#your_tasks {
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: blue;
+}

@@ -19,7 +19,12 @@
         </form>
     </div>
 
-   
+   <div id="your_tasks">
+       <h1>Your tasks</h1>
+       {% for task in tasks %}
+            <p>{{task["task"]}} is due {{task["date"]}}</p>
+       {% endfor %}
+   </div>
 
 </body>
 </html>
